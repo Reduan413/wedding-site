@@ -1,13 +1,10 @@
 "use client";
 
-import { useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import { CONFIG } from "@/lib/wedding-config";
-import { WeddingHero } from "./wedding-hero";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
-import { CoupleStory } from "./couple-story";
-import { Journey } from "./journey";
+import { useRef } from "react";
 
 gsap.registerPlugin(useGSAP);
 
@@ -98,10 +95,10 @@ export function Gate({ isOpened, onOpen }: GateProps) {
           <CornerOrnament className="bottom-2.5 left-2.5 -scale-y-100" />
         </div> */}
         <Image
-          src="/hero_img_left_sm.jpeg"
+          src="/hero_img_left_sm.png"
           alt=""
           fill
-          className="pointer-events-none object-fill brightness-90 contrast-75"
+          className="pointer-events-none object-fill brightness-90 contrast-90"
         />
       </div>
 
@@ -116,10 +113,10 @@ export function Gate({ isOpened, onOpen }: GateProps) {
         </div>
         <div className="ml-[26px] mr-auto h-4/5 w-0.5 self-center opacity-70 [background:repeating-linear-gradient(180deg,var(--gold)_0_6px,transparent_6px_14px)]" /> */}
         <Image
-          src="/hero_img_right_sm.jpeg"
+          src="/hero_img_right_sm.png"
           alt=""
           fill
-          className="pointer-events-none object-fill brightness-90 contrast-75"
+          className="pointer-events-none object-fill brightness-90 contrast-90"
         />
       </div>
 
@@ -128,9 +125,7 @@ export function Gate({ isOpened, onOpen }: GateProps) {
         ref={contentRef}
         className="absolute z-30 max-w-[520px] p-10 text-center text-[var(--ivory)]"
       >
-        <div className="label text-[#FFF8EA]">
-          Together with their families
-        </div>
+        <div className="label text-[#FFF8EA]">Together with their families</div>
         <div className="my-[18px] mb-2 flex items-center justify-center gap-4 font-[Cinzel,serif] text-[clamp(4rem,15vw,8rem)] text-[#f1c914]">
           {CONFIG.brideFirst[0]}
           <span className="font-['Cormorant_Garamond',serif] text-[0.6em] italic text-[#F4C96B]">

@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import { CONFIG } from "@/lib/wedding-config";
 import { Divider } from "@/components/divider";
+import { CONFIG } from "@/lib/wedding-config";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
 gsap.registerPlugin(useGSAP);
 
@@ -66,13 +66,13 @@ export function WeddingHero() {
           width={2000}
           height={2000}
           priority
-          className="h-full w-full object-cover scale-110"
-          style={{
-            filter: "blur(3px)",
-          }}
+          className="h-full w-full object-fit scale-110"
+          // style={{
+          //   filter: "blur(5px)",
+          // }}
         />
       </div>
-      <div className="relative z-10 flex flex-col items-center justify-center  opacity-70 bg-[#ffffff60] w-full h-screen">
+      <div className="relative z-10 flex flex-col items-center justify-center   w-full h-screen">
         <div data-hero-item className="label mb-1.5 text-[var(--maroon)]">
           Shubh Vivah
         </div>
