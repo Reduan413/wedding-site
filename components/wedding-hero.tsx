@@ -40,7 +40,7 @@ export function WeddingHero() {
         duration: 1,
         stagger: 0.12,
         ease: "power2.out",
-        delay: 0.9, // let the gate panels slide away first
+        delay: 1.5, // let the gate panels slide away first
       });
     },
     { scope: sectionRef },
@@ -78,10 +78,10 @@ export function WeddingHero() {
         </div>
         <h1
           data-hero-item
-          className="text-[clamp(2.4rem,7vw,4.4rem)] leading-[1.1] text-[var(--maroon)] flex flex-col justify-center items-center gap-2 font-[Cinzel,serif] text-center"
+          className="text-[clamp(4rem,7vw,4.4rem)] font-script leading-[1.1]  flex flex-col justify-center items-center gap-2 font-[Cinzel,serif] text-center"
         >
           {CONFIG.brideFirst}
-          <span className="my-1.5 block font-['Cormorant_Garamond',serif] text-[0.5em] italic text-[#ffffff]">
+          <span className="my-1.5 block !font-serif text-[0.5em] italic text-[#b32525]">
             &amp;
           </span>
           {CONFIG.groomFirst}
@@ -101,10 +101,10 @@ export function WeddingHero() {
 
         <div
           data-hero-item
-          className="mt-[42px] flex flex-wrap justify-center gap-[22px]"
+          className="!mt-10 flex flex-wrap justify-center gap-3"
         >
           {cells.map((c) => (
-            <div key={c.cap} className="min-w-[74px] text-center">
+            <div key={c.cap} className="min-w-[60px] text-center">
               <div className="font-[Cinzel,serif] text-[2rem] text-[var(--maroon)] tabular-nums">
                 {c.num}
               </div>

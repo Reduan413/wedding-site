@@ -69,8 +69,8 @@ export function Gate({ isOpened, onOpen }: GateProps) {
           panelRightRef.current,
           { xPercent: 104, duration: 3.1, ease: "power3.inOut" },
           0.15,
-        );
-      // .set(gateRef.current, { visibility: 'hidden', pointerEvents: 'none' })
+        )
+      .set(gateRef.current, { visibility: 'hidden', pointerEvents: 'none' })
     },
     { dependencies: [isOpened], scope: gateRef },
   );
@@ -78,7 +78,7 @@ export function Gate({ isOpened, onOpen }: GateProps) {
   return (
     <div
       ref={gateRef}
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden bg-transparent"
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden bg-transparent `}
       aria-hidden={isOpened}
     >
       {/* Ambient gold glow */}

@@ -9,9 +9,9 @@ export function BlessingSection() {
   useReveal(sectionRef)
 
   return (
-    <section ref={sectionRef} id="blessing" className="bg-[var(--maroon)] px-5 py-[100px] text-center text-[var(--ivory)]">
+    <section ref={sectionRef} id="blessing" className="bg-[var(--maroon)] px-5 py-16 text-center text-[var(--ivory)]">
       <div className="mx-auto max-w-[920px]">
-        <svg
+        {/* <svg
           data-reveal
           viewBox="0 0 40 40"
           fill="none"
@@ -22,7 +22,7 @@ export function BlessingSection() {
           <circle cx="20" cy="20" r="18" />
           <path d="M20 6v28M6 20h28" strokeWidth="0.6" />
           <circle cx="20" cy="20" r="4" />
-        </svg>
+        </svg> */}
         <p
           data-reveal
           className="mx-auto max-w-[640px] font-['Cormorant_Garamond',serif] text-[clamp(1.3rem,3vw,1.8rem)] italic leading-normal text-[var(--ivory-deep)]"

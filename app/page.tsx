@@ -8,6 +8,7 @@ import { Gate } from "@/components/gate";
 import { Journey } from "@/components/journey";
 import { ParentsBlessing } from "@/components/parents-blessing";
 import { Rsvp } from "@/components/rsvp";
+import ScratchToReveal from "@/components/ScratchToReveal";
 import { Venue } from "@/components/venue";
 import { WeddingFooter } from "@/components/wedding-footer";
 import { WeddingHero } from "@/components/wedding-hero";
@@ -31,12 +32,21 @@ export default function Page() {
         <div>
           <WeddingHero />
           <CoupleStory />
-          <Journey />
+
+          {/* <Journey /> */}
+          <ScratchToReveal
+            coupleNames="Emma & Julian"
+            eventDate="June 30, 2026"
+            eventDay="Tuesday"
+            eventTime="10:00 AM"
+            venue="The Wildflower Garden"
+          />
           <EventsTimeline />
           <ParentsBlessing />
           <BlessingSection />
           <Venue />
-          <Rsvp />
+          {/* <Rsvp /> */}
+
           <WeddingFooter />
         </div>
       )}

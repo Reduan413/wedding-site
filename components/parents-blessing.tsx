@@ -12,14 +12,14 @@ export function ParentsBlessing() {
     <section
       ref={sectionRef}
       id="parents-blessing"
-      className="bg-[var(--maroon-deep)] px-5 py-[100px] text-center text-[var(--ivory)]"
+      className="bg-[var(--maroon-deep)] px-5 py-16 text-center text-[var(--ivory)]"
     >
       <div className="mx-auto max-w-[920px]">
         <h2 data-reveal className="mb-11 text-[clamp(1.8rem,4vw,2.6rem)] text-[var(--ivory)]">
           Blessings From
         </h2>
 
-        <div data-reveal className="flex flex-wrap items-center justify-center gap-10">
+        <div data-reveal className="flex flex-col items-center justify-center gap-5 !mt-6">
           <div className="min-w-[200px]">
             <div className="label mb-2.5 text-[var(--gold)]">Groom&apos;s Parents</div>
             <div className="font-['Cormorant_Garamond',serif] text-[1.3rem] text-[var(--ivory-deep)]">
@@ -37,9 +37,9 @@ export function ParentsBlessing() {
           </div>
         </div>
 
-        <div className="mt-[30px] font-[Poppins,sans-serif] text-[0.8rem] tracking-[0.08em] text-[#a3897a]">
+        {/* <div className="mt-[30px] font-[Poppins,sans-serif] text-[0.8rem] tracking-[0.08em] text-[#a3897a]">
           And Grandparents
-        </div>
+        </div> */}
       </div>
     </section>
   )
