@@ -24,7 +24,7 @@ export function SectionHead({
   return (
     <div data-reveal className="mb-14 text-center">
       <div className="label text-[var(--gold)]">{label}</div>
-      <h2 className="mt-2 text-[clamp(1.8rem,4vw,2.6rem)] text-[var(--maroon)]">
+      <h2 className="mt-2 text-[clamp(2rem,4vw,2.6rem)] font-script text-[var(--maroon)]">
         {title}
       </h2>
     </div>

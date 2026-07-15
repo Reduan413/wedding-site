@@ -373,7 +373,7 @@ export function ScratchToReveal({
 
   return (
     <div
-      className="flex min-h-screen w-full items-center justify-center px-6 py-16"
+      className="flex  w-full items-center justify-center px-6 py-16"
       style={{
         background: `radial-gradient(ellipse at 50% 0%, ${COLORS.paperDeep} 0%, ${COLORS.paper} 60%)`,
         fontFamily: "var(--font-cormorant), serif",
